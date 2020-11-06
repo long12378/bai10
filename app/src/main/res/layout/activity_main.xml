@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D3E52"
+    android:orientation="vertical"
+android:weightSum="10"
+    tools:context=".MainActivity">
+    <LinearLayout
+android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#242C3B"
+            android:text="Contact"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#242C3B"
+            android:text="Message"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/radius"
+        android:drawableLeft="@drawable/ic_action_find"
+
+        android:hint="Search"
+        android:paddingLeft="20dp"
+        android:textColorHint="#216362"
+        android:textSize="18sp" />
+
+    <ListView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bk"
+           android:layout_weight="5"
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            />
+
+    <LinearLayout
+android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#2D3E52"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_weight="1"
+            android:background="#2D3E52"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#0CD0A5"
+            android:drawableTop="@drawable/ic_action_phone1"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:text="Recent"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#2D3E52"
+            android:drawableTop="@drawable/ic_action_group"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+           android:textColor="#0CD0A5"
+            android:text="Group"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#2D3E52"
+            android:textColor="#0CD0A5"
+            android:drawableTop="@drawable/ic_action_start"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:text="Favorites"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#2D3E52"
+            android:textColor="#0CD0A5"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:text="..."/>
+    </LinearLayout>
+</LinearLayout>
